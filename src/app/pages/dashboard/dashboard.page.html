@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>USER HEALTH</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <div *ngIf="user != undefined">
+      Welcome {{ user["first_name"]  }} {{ user["last_name"]  }}
+  </div>
+
+  <!--  ---------------- ---------------Body Temperature ------------------------------>
+   <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>{{body_temperature}}</ion-card-subtitle>
+      <ion-card-title> Body Temperature</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+     Normal temperature of a human body is 98.6 F.
+     your Temperature {{body_temperature}}
+    </ion-card-content>
+  </ion-card>
+
+  <!------------ ------------------------End  of Body Temperature ------------------------->
+
+
+  <!-- ---------------------------------Start of Blood Pressure ------------------------------>
+  <ion-card>
+    <ion-card-header>
+        <ion-card-title>Blood Pressure</ion-card-title>
+      <ion-card-subtitle>{{blood_pressure}}</ion-card-subtitle>
+     
+    </ion-card-header>
+  
+    <ion-card-content>
+     Normal Blood Pressure of a human body is 120/80 mmHg.
+     your Blood Pressure {{ blood_pressure}}
+    </ion-card-content>
+  </ion-card>
+  <!-- ----------------------------- End of Blood Pressure ---------------------------------------->
+
+  <!-- ------------------------------------ Start Pulse Rate  --------------------------------->
+
+  <ion-card>
+      <ion-card-header>
+          <ion-card-title> Pulse Rate</ion-card-title>
+        <ion-card-subtitle>{{pulse_rate}}</ion-card-subtitle>
+       
+      </ion-card-header>
+    
+      <ion-card-content>
+       Normal Pulse Rate of a human body is 60-100 bpm.
+       your Pulse Rate {{ pulse_rate}}
+      </ion-card-content>
+    </ion-card>
+
+
+    <!--  -------------------------------End Pulse Rate  ------------------------------------------>
+</ion-content
