@@ -8,7 +8,11 @@ import { User } from 'src/app/models/user';
   styleUrls: ['./dashboard.page.scss'],
 })
 export class DashboardPage implements OnInit {
-  user: User;
+
+  pulse_rate :number = 120 ;
+  body_temperature : number = 98.6 ;
+  blood_pressure : number = 120 ;
+    user: User;
   constructor(private menu: MenuController, private authService: AuthService) { 
     this.menu.enable(true);
   }

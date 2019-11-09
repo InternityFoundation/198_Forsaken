@@ -33,6 +33,24 @@ export class AuthService {
       }),
     );
   }
+
+  staticLogin(email: String, password: String) {
+
+    let $this = this;
+    return new Promise(function(resolve, reject){
+      if(email == "admin" && password == "123456"){
+        let token = "qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq";
+        localStorage.setItem('token', token);
+        $this.storage.setItem('token', token);
+        $this.token = token;
+        $this.isLoggedIn = true;
+        resolve(token);
+      }else{
+        resolve(false);
+      }
+    })
+  }
+
   register(fName: String, lName: String, email: String, password: String) {
     return this.http.post(this.env.API_URL + 'auth/register',
       {fName: fName, lName: lName, email: email, password: password}
