@@ -1,71 +1,74 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>
-      Profile
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<!-- <ion-content>
-   <ion-card>
-     <ion-card-header>
-       <ion-card-content>
-         <ion-card-title>My Profile</ion-card-title>
- <ion-card-body></ion-card-body> 
-       </ion-card-content>
-     </ion-card-header>         
-   </ion-card>
-</ion-content>  -->
-
-
- <!-- <ion-header>
-    <ion-navbar color="primary">
-      <ion-title> Create Profile</ion-title>
-    </ion-navbar>
-  </ion-header> -->
-  <!-- <ion-content padding>
-    <ion-list>
-      <ion-item>
-        <ion-label floating [(ngModel)]="profile.firstName" ngDefaultControl>First Name</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label floating [(ngModel)]="profile.lastName" ngDefaultControl>Last Name</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label floating [(ngModel)]="profile.eventName" ngDefaultControl>Event Name</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label floating [(ngModel)]="profile.hall" ngDefaultControl>Hall #</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label floating [(ngModel)]="profile.booth" ngDefaultControl>Booth #</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item>
-    </ion-list>
-    <button ion-button block (click)="createProfile(Profiles)">Create Profile</button>
-  </ion-content> -->
-
-<ion-content>
-    <ion-row>
-        <ion-col size="4">
-            <ion-chip>
-                <ion-avatar>
-                  <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
-                </ion-avatar>
-                <ion-label>Avatar Chip</ion-label>
-                <ion-icon name="close-circle"></ion-icon>
-              </ion-chip>
-        </ion-col>
-       
-        <ion-col>
-          ion-col
-        </ion-col>
-      </ion-row>
-</ion-content>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        Profile
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <!-- <ion-content>
+     <ion-card>
+       <ion-card-header>
+         <ion-card-content>
+           <ion-card-title>My Profile</ion-card-title>
+   <ion-card-body></ion-card-body> 
+         </ion-card-content>
+       </ion-card-header>         
+     </ion-card>
+  </ion-content>  -->
+  
+  
+   <!-- <ion-header>
+      <ion-navbar color="primary">
+        <ion-title> Create Profile</ion-title>
+      </ion-navbar>
+    </ion-header> -->
+    <!-- <ion-content padding>
+      <ion-list>
+        <ion-item>
+          <ion-label floating [(ngModel)]="profile.firstName" ngDefaultControl>First Name</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating [(ngModel)]="profile.lastName" ngDefaultControl>Last Name</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating [(ngModel)]="profile.eventName" ngDefaultControl>Event Name</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating [(ngModel)]="profile.hall" ngDefaultControl>Hall #</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating [(ngModel)]="profile.booth" ngDefaultControl>Booth #</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-list>
+      <button ion-button block (click)="createProfile(Profiles)">Create Profile</button>
+    </ion-content> -->
+  
+  <ion-content>
+      <ion-row>
+          <ion-col size="4">
+             <ion-card>
+                <ion-avatar class="circle_pic">
+                    <img src="">
+              </ion-avatar>
+             </ion-card>
+          </ion-col>
+         
+          <ion-col>
+             <ion-card>
+               <ion-card-header> Profile</ion-card-header>
+               <ion-card-content> {{username}}</ion-card-content>
+               
+             </ion-card>
+          </ion-col>
+        </ion-row>
+  </ion-content>
+  
